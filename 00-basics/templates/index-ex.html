@@ -1,0 +1,15 @@
+{% extends "base-ex.html" %}
+{% block content %}
+    <p>Enter your username with</p>
+    <ul>
+        <li>At least one lowercase letter.</li>
+        <li>At least one uppercase letter.</li>
+        <li>Ends with one number.</li>
+    </ul>
+
+    <form action="{{url_for('report')}}">
+        <label for="username">Username</label>
+        <input type="text" name="username">
+        <input type="submit">
+    </form>
+{% endblock %}

@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>First page</title>
+    </head>
+    <body>
+        <h1>Hello guys</h1>
+        <h1>My name is {{name}}, and i'm {{year}}</h1>
+        <h2>My favorites numbers are:</h2>
+        <ul>
+            {% for number in numbers %}
+                <li>{{number}}</li>
+            {% endfor %}
+        </ul>
+        <img src="../static/images/tibia.jpg" alt="Tibia">
+    </body>
+</html>
